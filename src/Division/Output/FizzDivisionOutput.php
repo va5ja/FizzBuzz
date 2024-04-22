@@ -13,6 +13,6 @@ class FizzDivisionOutput implements DivisionOutputInterface
 
     public function isApplicable(int $number): bool
     {
-        return 0 === $number % 3;
+        return $number % 3 === 0;
     }
 }

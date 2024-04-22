@@ -13,11 +13,11 @@ class FizzBuzzDivisionOutput implements DivisionOutputInterface
 
     public function isApplicable(int $number): bool
     {
-        return 0 === $number % 3 && 0 === $number % 5;
+        return $number % 3 === 0 && $number % 5 === 0;
     }
 
     public static function getDefaultPriority(): int
     {
-        return 3;
+        return 10;
     }
 }

@@ -20,7 +20,7 @@ class FizzBuzzCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        for ($number = 1; $number <= 100; ++$number) {
+        for ($number = 1; $number <= 100; $number++) {
             $output->writeln($this->divisionHandler->getDivisionOutput($number));
         }
 

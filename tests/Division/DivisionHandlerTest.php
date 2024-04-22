@@ -15,7 +15,7 @@ class DivisionHandlerTest extends TestCase
      */
     public function testGetDivisionOutput(int $number, string $expectedResult): void
     {
-        $output = new class() implements DivisionOutputInterface {
+        $output = new class () implements DivisionOutputInterface {
             public function getOutput(): string
             {
                 return 'Test';
@@ -23,7 +23,7 @@ class DivisionHandlerTest extends TestCase
 
             public function isApplicable(int $number): bool
             {
-                return 0 === $number % 2 && 0 === $number % 7;
+                return $number % 2 === 0 && $number % 7 === 0;
             }
         };
 

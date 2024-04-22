@@ -18,7 +18,7 @@ class DivisionHandler
     ) {
     }
 
-    public function getDivisionOutput(int $number): int|string
+    public function getDivisionOutput(int $number): string
     {
         foreach ($this->outputs as $output) {
             if ($output->isApplicable($number)) {
@@ -26,6 +26,6 @@ class DivisionHandler
             }
         }
 
-        return (string) $number;
+        return (string)$number;
     }
 }

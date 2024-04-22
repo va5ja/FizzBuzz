@@ -13,6 +13,6 @@ class BuzzDivisionOutput implements DivisionOutputInterface
 
     public function isApplicable(int $number): bool
     {
-        return 0 === $number % 5;
+        return $number % 5 === 0;
     }
 }
