@@ -8,7 +8,7 @@ Requirements
 - Composer
 
 Composer
-========
+--------
 To install the dependencies, run the following command:
 >$ composer install
 
